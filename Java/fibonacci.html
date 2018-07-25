@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre class="prettyprint">
+import java.util.Scanner;
+
+public class Fibonacci {
+	
+	public static void main(String[] args) {
+		int a = 0, b = 1, c = 0,num = 0;
+	    
+	    //Variable num denotes the number of terms in the series
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of terms : ");
+	    num = sc.nextInt();
+	    
+	    //Fibonacci series starts with 0 and 1
+	    System.out.print(a);
+	    
+	    //Just for presentation
+	    System.out.print(",");
+	    
+	    System.out.print(b);
+	    
+	    //Loop will start from 2 as two terms are already printed
+	    for(int i = 2; i < num; i++){
+	        
+	        //Every number is sum of preceding two numbers
+	        c = a + b;
+	        a = b;
+	        b = c;
+	        
+	        System.out.print(",");
+	        System.out.print(b);
+	    }
+	}
+	
+}
+
+</pre>
+
+<script>prettyPrint();</script>
+</body>
+</html>

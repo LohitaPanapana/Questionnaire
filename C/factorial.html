@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre class="prettyprint">	
+#include &ltstdio.h&gt
+
+int main()
+{
+    int num, fact = 1;
+    
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    
+    int factorial(num){
+        
+        //Factorial of 0 is 1
+        if(num == 0){
+            fact = 1;
+        }
+        else{
+            fact = fact * num;
+        }
+    }
+    
+    while(num > 0){
+        
+        //Invoking factorial function recursively till num greater than 0
+        factorial(num);
+        num--;
+    }
+    
+    printf("Factorial of given number is %d",fact);
+    
+    return 0;
+}
+
+</pre>
+<script>prettyPrint();</script>
+</body>
+</html>

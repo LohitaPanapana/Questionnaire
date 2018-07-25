@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre class="prettyprint">	
+#include &ltstdio.h&gt
+int main()
+{
+    int num, temp, rem, revNum = 0;
+    
+    //Taking input from user
+    printf("Enter the number : ");
+    scanf("%d",&num);
+    
+    //Storing value of num in another temporary variable
+    temp = num;
+    
+    //Logic for reverse of a number
+    while(num > 0){
+        //To get last digit of number
+        rem = num % 10;
+        //Remove the last digit
+        num = num / 10;
+        //Add last digit to revNum
+        revNum = revNum * 10 + rem;
+    }
+    
+    //Num cannot be used for comparison because its value changed 
+    //in the while loop
+    //Compare reversed number with original number placed in temp
+    if(revNum == temp){
+        printf("Number is palindrome");
+    }
+    else{
+        printf("Number is not a palindrome");
+    }
+    
+    return 0;
+}
+
+
+</pre>
+<script>prettyPrint();</script>
+</body>
+</html>

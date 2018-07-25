@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre class="prettyprint">	
+#include &ltstdio.h&gt
+int main()
+{   
+    int a = 0, b = 1, c = 0,num = 0, i;
+    
+    //Variable num denotes the number of terms in the series
+    printf("Enter a number of terms: ");
+    scanf("%d",&num);
+    
+    //Fibonacci series starts with 0 and 1
+    printf("%d",a);
+    
+    //Just for presentation
+    printf(",");
+    
+    printf("%d",b);
+    
+    //Loop will start from 2 as two terms are already printed
+    for(i = 2; i < num; i++){
+        
+        //Every number is sum of preceding two numbers
+        c = a + b;
+        a = b;
+        b = c;
+        
+        printf(",");
+        printf("%d",b);
+    }
+    
+    return 0;
+}
+</pre>
+<script>prettyPrint();</script>
+</body>
+</html>

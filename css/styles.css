@@ -1,0 +1,124 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	background: #74ebd5; 
+	background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*h1{
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 55px;
+	font-weight: 600;
+	padding: 30px;
+	margin: 0;
+}
+*/
+
+.jumbotron{
+	background: rgba(0,0,0,0.5);
+
+}
+
+.jumbotron h1{
+
+	font-weight: 600;
+	font-size: 80px;
+	color: #ffffff;
+}
+
+.container{
+	margin-top: 10px;
+}
+
+#rows{
+	height: 50px;
+	margin: 10px auto;
+	background: rgba(255,255,255,0.7);
+	padding-left: 50px;
+	line-height: 50px;
+	box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+a{
+	font-size: 18px;	
+}
+
+a:hover{
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.glyphicon-question-sign{
+	margin-right: 20px;
+}
+span{
+	font-weight: 600;
+}
+
+pre.prettyprint{
+	border: none;
+	background: white;
+	font-size: 14px;
+}
+
+#wrapper{
+	margin: 20px auto;
+}
+
+#solution{
+	background: rgba(255,255,255,0.9);
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 10px;
+}
+
+#question{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+input[type="search"]{
+	margin: 20px auto;
+	padding: 25px;
+}
+
+.panel-heading{
+	height: 50px;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+.panel-title{
+	margin-top: 5px;
+}
+
+.panel-body{
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+select{
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	border: 2px solid #bce8f1; 
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+option{
+	background : white;
+	font-size: 16px;
+}
+
+#back{
+	margin-bottom: 10px;
+}

@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre class="prettyprint">
+import java.util.Scanner;
+
+public class Palindrome {
+	public static void main(String args[])
+    {
+        int num, temp, rem, revNum = 0;
+		
+		//Taking input from user
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number : ");
+        num = sc.nextInt();
+		
+		//Storing value of num in another temporary variable
+        temp = num;
+		
+        //Logic for reverse of a number
+		while(num > 0){
+			//To get last digit of number
+			rem = num % 10;
+			//Remove the last digit
+			num = num / 10;
+			//Add last digit to revNum
+			revNum = revNum * 10 + rem;
+		}
+        if(revNum == temp)
+        {
+            System.out.println("Number is palindrome");
+        }
+        else
+        {
+            System.out.println("Number is not palindrome");
+        }
+    }
+}
+</pre>
+
+<script>prettyPrint();</script>
+</body>
+</html>

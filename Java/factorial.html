@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre class="prettyprint">	
+import java.util.Scanner;
+
+public class Factorial {
+	
+	static double factorial(double num){
+		
+        //Factorial of 0 is 1
+        if(num == 0){
+            return 1;
+        }
+        else{
+            return num;
+        }
+        
+        
+    }
+	
+	public static void main(String args[])
+    {
+		double num, fact=1;
+		Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the positive number : ");
+        num = sc.nextInt();
+        
+	    while(num > 0){
+	        
+	        //Invoking factorial function recursively till num greater than 0
+	        fact *=factorial(num);
+	        num--;
+	    }
+	    
+	    System.out.println("Factorial of given number is " +  fact);
+    }
+}
+
+
+
+</pre>
+<script>prettyPrint();</script>
+</body>
+</html>
